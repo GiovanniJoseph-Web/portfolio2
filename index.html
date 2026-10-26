@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giovanni Joseph Khalaf | Frontend Web Developer</title>
+  <meta name="description" content="Portfolio of Giovanni Joseph Khalaf, a frontend web developer in Alexandria, Egypt, building responsive websites with HTML5, CSS3, JavaScript, Bootstrap and React.">
+  <meta name="theme-color" content="#0B1220">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Giovanni Joseph Khalaf | Frontend Web Developer">
+  <meta property="og:description" content="Responsive, user-friendly websites built with HTML5, CSS3, JavaScript and Bootstrap. See my projects and get in touch.">
+  <meta property="og:image" content="assets/projects/burger-hub.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">Giovanni Khalaf</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-role anim" style="--d:0ms">Frontend Web Developer · Alexandria, Egypt</p>
+          <h1 class="anim" style="--d:80ms">Giovanni Joseph Khalaf</h1>
+          <p class="hero-intro anim" style="--d:160ms">I build responsive, user-friendly websites with HTML5, CSS3, JavaScript and Bootstrap, and I'm now training in React. I'm a Business Information Systems student who turns designs into clean, working interfaces.</p>
+          <div class="hero-actions anim" style="--d:260ms">
+            <a class="btn btn-primary" href="#projects">View My Projects</a>
+            <a class="btn btn-secondary" href="assets/Giovanni-Joseph-Khalaf-CV.pdf" download="Giovanni-Joseph-Khalaf-CV.pdf">Download My CV</a>
+          </div>
+          <ul class="social anim" style="--d:340ms">
+            <li><a href="https://www.linkedin.com/in/giovanni-joseph-frontend" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/GiovanniJoseph-Web" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="hero-photo anim anim-photo" style="--d:200ms">
+          <img src="assets/profile.png" alt="Portrait of Giovanni Joseph Khalaf, smiling, wearing a dark hoodie" width="1000" height="800" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a frontend web developer and a Business Information Systems student at the Faculty of Commerce, Alexandria University (expected graduation 2027, GPA 3.6/4).</p>
+            <p>I've built responsive websites for clients as a freelancer since March 2026, using HTML5, CSS3, JavaScript and Bootstrap. I work from client requirements to a finished interface and check that pages behave well across browsers, phones and desktops.</p>
+            <p>I'm currently training in React.js through the Digital Egypt Pioneers Initiative (DEPI). My goal is to keep writing clean code and to grow into modern React-based frontend work.</p>
+            <p class="muted">Languages: English (A2).</p>
+          </div>
+          <ol class="timeline reveal" aria-label="Experience and training">
+            <li>
+              <h3>React Frontend Web Developer (Trainee)</h3>
+              <p class="meta">Digital Egypt Pioneers Initiative (DEPI) · July 2026 – Present</p>
+              <p>Intensive track on modern frontend techniques and React.js, building interactive web modules with a team.</p>
+            </li>
+            <li>
+              <h3>Freelance Frontend Developer</h3>
+              <p class="meta">March 2026 – Present</p>
+              <p>Custom responsive pages for clients, with attention to cross-browser compatibility and performance on mobile and desktop.</p>
+            </li>
+            <li>
+              <h3>Web Designer (Trainee)</h3>
+              <p class="meta">National Telecommunication Institute (NTI) · January – March 2026</p>
+              <p>Web design principles, UI layouts and frontend markup. Completed the 120-hour Professional Web Designer program with a score of 95%.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-lead reveal">Landing pages and websites I've designed and built. Projects without a live link are waiting to be deployed.</p>
+        <div class="filters reveal" id="filters" role="group" aria-label="Filter projects by category"></div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-lead">Have a project, a job opening or a question? Send me a message and I'll reply by email.</p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:jeuovanygozaf@gmail.com">jeuovanygozaf@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/giovanni-joseph-frontend" target="_blank" rel="noopener noreferrer">giovanni-joseph-frontend</a></li>
+            <li><span>GitHub</span><a href="https://github.com/GiovanniJoseph-Web" target="_blank" rel="noopener noreferrer">GiovanniJoseph-Web</a></li>
+          </ul>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err"><p class="error" id="name-err" role="alert"></p></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err"><p class="error" id="email-err" role="alert"></p></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required aria-describedby="subject-err"><p class="error" id="subject-err" role="alert"></p></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required aria-describedby="message-err"></textarea><p class="error" id="message-err" role="alert"></p></div>
+          <button class="btn btn-primary" type="submit">Prepare email</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Giovanni Joseph Khalaf</p>
+        <p class="muted">Frontend Web Developer</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/giovanni-joseph-frontend" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/GiovanniJoseph-Web" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
+    <p class="container copyright">© <span id="year">2026</span> Giovanni Joseph Khalaf. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top" type="button">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
